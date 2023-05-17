@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Avaliação de Atendimento</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://192.168.1.18:64555/all">
+  <link rel="stylesheet" href="http://192.168.1.18:64555/bulma">
+
+  <style>
+    body {
+      background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+    }
+
+    textarea {
+      background: linear-gradient(to right, #48cbf7 0%, #faa7d0 100%);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="section hero is-fullheight is-flex is-justify-content-center is-align-items-center">
+    <div class="container mt-6">
+      <h1 class="title has-text-centered">Avaliação de Atendimento</h1>
+      <form id="avaliacao" action="lalala">
+        <div class="field">
+          <div class="buttons is-centered">
+            <button type="button" id="btnPessimo" value="1" class="button is-danger is-size-4" style="padding: 5rem;">
+              <span class="icon" style="font-size: 10rem;">
+                <i class="fas fa-angry"></i>
+              </span>
+            </button>
+            <button type="button" id="btnRuim" value="2" class="button is-info is-size-4"
+              style="padding: 5rem; background-color: #ff9800;">
+              <span class="icon" style="font-size: 10rem;">
+                <i class="fas fa-frown"></i>
+              </span>
+            </button>
+            <button type="button" id="btnNormal" value="3" class="button is-success is-size-4"
+              style="padding: 5rem;  background-color: #fcc649;">
+              <span class="icon" style="font-size: 10rem;">
+                <i class="fas fa-meh"></i>
+              </span>
+            </button>
+            <button type="button" id="btnBom" value="4" class="button is-primary is-size-4" style="padding: 5rem;">
+              <span class="icon" style="font-size: 10rem;">
+                <i class="fas fa-smile"></i>
+              </span>
+            </button>
+            <button type="button" id="btnOtimo" value="5"
+              class="button is-info is-size-4 is-transparent is-transparent-100" style="padding: 5rem;">
+              <span class="icon" style="font-size: 10rem;">
+                <i class="fas fa-grin"></i>
+              </span>
+            </button>
+          </div>
+          <label class="label has-text-centered is-size-4">Descrição:</label>
+          <div class="control">
+            <textarea class="textarea has-text-centered is-primary is-size-3"
+              placeholder="Conte-nos sobre a sua experiencia"></textarea>
+          </div>
+          <div class="buttons is-centered mt-2">
+            <button class="button is-size-4" id="btnConfirmar"
+              style=" background: linear-gradient(to right, #8fdaf8 0%, #eeacee 100%);">
+              <span class="icon" style="font-size: 1.5rem;">
+                <i class="fas fa-check"></i>
+              </span>
+              <span><strong>Confirmar</strong></span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+<script>
+  document.getElementById("btnPessimo").addEventListener("click", function () {
+    selecionarBotao("btnPessimo");
+  });
+
+  document.getElementById("btnRuim").addEventListener("click", function () {
+    selecionarBotao("btnRuim");
+  });
+
+  document.getElementById("btnNormal").addEventListener("click", function () {
+    selecionarBotao("btnNormal");
+  });
+
+  document.getElementById("btnBom").addEventListener("click", function () {
+    selecionarBotao("btnBom");
+  });
+  document.getElementById("btnOtimo").addEventListener("click", function () {
+    selecionarBotao("btnOtimo");
+  });
+
+  let idBotaoSelecionado = null; // variável global para armazenar o ID do botão selecionado
+  function enviar() {
+    if (idBotaoSelecionado != null) {
+      const textarea = document.getElementById("meuTextarea").value;
+      const url = `http://192.168.1.18:64555/avaliacao/${textarea}/${idBotaoSelecionado}`;
+      window.location.replace(url);
+    }
+  }
+
+
+
+
+  function selecionarBotao(idBotao) {
+    // seleciona o botão clicado
+    const botao = document.getElementById(idBotao);
+
+    // verifica se o botão clicado é o mesmo que já está selecionado
+    if (idBotao === idBotaoSelecionado) {
+      // se for, torna todos os botões normais e limpa o ID do botão selecionado
+      idBotaoSelecionado = null;
+      const botoes = document.getElementsByTagName("button");
+      for (let i = 0; i < botoes.length; i++) {
+        if (botoes[i].id !== "btnConfirmar") { // ignora o botão "btnConfirmar"
+          botoes[i].style.opacity = "1"; // define opacidade normal
+        }
+      }
+      return;
+    }
+
+    // define opacidade normal para o botão clicado
+    botao.style.opacity = "1";
+
+    // desativa os outros botões
+    const botoes = document.getElementsByTagName("button");
+    for (let i = 0; i < botoes.length; i++) {
+      if (botoes[i].id !== idBotao && botoes[i].id !== "btnConfirmar") { // ignora o botão "btnConfirmar"
+        botoes[i].style.opacity = "0.5"; // define opacidade 50%
+      }
+    }
+
+    // atualiza o ID do botão selecionado
+    idBotaoSelecionado = idBotao;
+  }
+
+
+
+</script>
