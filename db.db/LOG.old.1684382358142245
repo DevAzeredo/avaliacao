@@ -1,0 +1,311 @@
+2023/05/18-00:54:31.069950 3d98 RocksDB version: 7.9.2
+2023/05/18-00:54:31.071135 3d98 Compile date 2022-12-22 09:30:39
+2023/05/18-00:54:31.071159 3d98 DB SUMMARY
+2023/05/18-00:54:31.071170 3d98 DB Session ID:  72P36WFXW7N2G64WL8Y4
+2023/05/18-00:54:31.077829 3d98 CURRENT file:  CURRENT
+2023/05/18-00:54:31.077863 3d98 IDENTITY file:  IDENTITY
+2023/05/18-00:54:31.078026 3d98 MANIFEST file:  MANIFEST-000105 size: 74 Bytes
+2023/05/18-00:54:31.078054 3d98 SST files in db.db/ dir, Total Num: 0, files: 
+2023/05/18-00:54:31.078081 3d98 Write Ahead Log file in db.db/: 000004.log size: 0 ; 000008.log size: 0 ; 000012.log size: 0 ; 000016.log size: 0 ; 000020.log size: 0 ; 000024.log size: 0 ; 000028.log size: 0 ; 000032.log size: 0 ; 000036.log size: 0 ; 000040.log size: 0 ; 000044.log size: 0 ; 000048.log size: 0 ; 000052.log size: 0 ; 000056.log size: 0 ; 000060.log size: 0 ; 000064.log size: 0 ; 000068.log size: 0 ; 000072.log size: 0 ; 000076.log size: 0 ; 000080.log size: 0 ; 000084.log size: 0 ; 000088.log size: 0 ; 000092.log size: 0 ; 000096.log size: 0 ; 000100.log size: 0 ; 000104.log size: 0 ; 
+2023/05/18-00:54:31.090030 3d98                         Options.error_if_exists: 0
+2023/05/18-00:54:31.090046 3d98                       Options.create_if_missing: 1
+2023/05/18-00:54:31.090051 3d98                         Options.paranoid_checks: 1
+2023/05/18-00:54:31.090055 3d98             Options.flush_verify_memtable_count: 1
+2023/05/18-00:54:31.090058 3d98                               Options.track_and_verify_wals_in_manifest: 0
+2023/05/18-00:54:31.090062 3d98        Options.verify_sst_unique_id_in_manifest: 1
+2023/05/18-00:54:31.090066 3d98                                     Options.env: 00000248EBA91130
+2023/05/18-00:54:31.090070 3d98                                      Options.fs: WinFS
+2023/05/18-00:54:31.090074 3d98                                Options.info_log: 00000248EBA77D00
+2023/05/18-00:54:31.090078 3d98                Options.max_file_opening_threads: 16
+2023/05/18-00:54:31.090082 3d98                              Options.statistics: 0000000000000000
+2023/05/18-00:54:31.090086 3d98                               Options.use_fsync: 0
+2023/05/18-00:54:31.090089 3d98                       Options.max_log_file_size: 0
+2023/05/18-00:54:31.090093 3d98                  Options.max_manifest_file_size: 1073741824
+2023/05/18-00:54:31.090097 3d98                   Options.log_file_time_to_roll: 0
+2023/05/18-00:54:31.090100 3d98                       Options.keep_log_file_num: 1000
+2023/05/18-00:54:31.090104 3d98                    Options.recycle_log_file_num: 0
+2023/05/18-00:54:31.090108 3d98                         Options.allow_fallocate: 1
+2023/05/18-00:54:31.090111 3d98                        Options.allow_mmap_reads: 0
+2023/05/18-00:54:31.090115 3d98                       Options.allow_mmap_writes: 0
+2023/05/18-00:54:31.090118 3d98                        Options.use_direct_reads: 0
+2023/05/18-00:54:31.090122 3d98                        Options.use_direct_io_for_flush_and_compaction: 0
+2023/05/18-00:54:31.090126 3d98          Options.create_missing_column_families: 0
+2023/05/18-00:54:31.090142 3d98                              Options.db_log_dir: 
+2023/05/18-00:54:31.090145 3d98                                 Options.wal_dir: 
+2023/05/18-00:54:31.090151 3d98                Options.table_cache_numshardbits: 6
+2023/05/18-00:54:31.090155 3d98                         Options.WAL_ttl_seconds: 0
+2023/05/18-00:54:31.090158 3d98                       Options.WAL_size_limit_MB: 0
+2023/05/18-00:54:31.090162 3d98                        Options.max_write_batch_group_size_bytes: 1048576
+2023/05/18-00:54:31.090166 3d98             Options.manifest_preallocation_size: 4194304
+2023/05/18-00:54:31.090169 3d98                     Options.is_fd_close_on_exec: 1
+2023/05/18-00:54:31.090173 3d98                   Options.advise_random_on_open: 1
+2023/05/18-00:54:31.090176 3d98                    Options.db_write_buffer_size: 0
+2023/05/18-00:54:31.090180 3d98                    Options.write_buffer_manager: 00000248EBA99530
+2023/05/18-00:54:31.090184 3d98         Options.access_hint_on_compaction_start: 1
+2023/05/18-00:54:31.090220 3d98           Options.random_access_max_buffer_size: 1048576
+2023/05/18-00:54:31.090227 3d98                      Options.use_adaptive_mutex: 0
+2023/05/18-00:54:31.090230 3d98                            Options.rate_limiter: 0000000000000000
+2023/05/18-00:54:31.090235 3d98     Options.sst_file_manager.rate_bytes_per_sec: 0
+2023/05/18-00:54:31.090239 3d98                       Options.wal_recovery_mode: 2
+2023/05/18-00:54:31.090242 3d98                  Options.enable_thread_tracking: 0
+2023/05/18-00:54:31.090246 3d98                  Options.enable_pipelined_write: 0
+2023/05/18-00:54:31.090249 3d98                  Options.unordered_write: 0
+2023/05/18-00:54:31.090253 3d98         Options.allow_concurrent_memtable_write: 1
+2023/05/18-00:54:31.090256 3d98      Options.enable_write_thread_adaptive_yield: 1
+2023/05/18-00:54:31.090260 3d98             Options.write_thread_max_yield_usec: 100
+2023/05/18-00:54:31.090264 3d98            Options.write_thread_slow_yield_usec: 3
+2023/05/18-00:54:31.090267 3d98                               Options.row_cache: None
+2023/05/18-00:54:31.090271 3d98                              Options.wal_filter: None
+2023/05/18-00:54:31.090274 3d98             Options.avoid_flush_during_recovery: 0
+2023/05/18-00:54:31.090278 3d98             Options.allow_ingest_behind: 0
+2023/05/18-00:54:31.090281 3d98             Options.two_write_queues: 0
+2023/05/18-00:54:31.090285 3d98             Options.manual_wal_flush: 0
+2023/05/18-00:54:31.090288 3d98             Options.wal_compression: 0
+2023/05/18-00:54:31.090291 3d98             Options.atomic_flush: 0
+2023/05/18-00:54:31.090295 3d98             Options.avoid_unnecessary_blocking_io: 0
+2023/05/18-00:54:31.090298 3d98                 Options.persist_stats_to_disk: 0
+2023/05/18-00:54:31.090302 3d98                 Options.write_dbid_to_manifest: 0
+2023/05/18-00:54:31.090305 3d98                 Options.log_readahead_size: 0
+2023/05/18-00:54:31.090309 3d98                 Options.file_checksum_gen_factory: Unknown
+2023/05/18-00:54:31.090313 3d98                 Options.best_efforts_recovery: 0
+2023/05/18-00:54:31.090316 3d98                Options.max_bgerror_resume_count: 2147483647
+2023/05/18-00:54:31.090320 3d98            Options.bgerror_resume_retry_interval: 1000000
+2023/05/18-00:54:31.090323 3d98             Options.allow_data_in_errors: 0
+2023/05/18-00:54:31.090327 3d98             Options.db_host_id: __hostname__
+2023/05/18-00:54:31.090330 3d98             Options.enforce_single_del_contracts: true
+2023/05/18-00:54:31.090334 3d98             Options.max_background_jobs: 2
+2023/05/18-00:54:31.090337 3d98             Options.max_background_compactions: -1
+2023/05/18-00:54:31.090341 3d98             Options.max_subcompactions: 1
+2023/05/18-00:54:31.090344 3d98             Options.avoid_flush_during_shutdown: 0
+2023/05/18-00:54:31.090348 3d98           Options.writable_file_max_buffer_size: 1048576
+2023/05/18-00:54:31.090351 3d98             Options.delayed_write_rate : 16777216
+2023/05/18-00:54:31.090355 3d98             Options.max_total_wal_size: 0
+2023/05/18-00:54:31.090358 3d98             Options.delete_obsolete_files_period_micros: 21600000000
+2023/05/18-00:54:31.090362 3d98                   Options.stats_dump_period_sec: 600
+2023/05/18-00:54:31.090366 3d98                 Options.stats_persist_period_sec: 600
+2023/05/18-00:54:31.090369 3d98                 Options.stats_history_buffer_size: 1048576
+2023/05/18-00:54:31.090373 3d98                          Options.max_open_files: -1
+2023/05/18-00:54:31.090376 3d98                          Options.bytes_per_sync: 0
+2023/05/18-00:54:31.090380 3d98                      Options.wal_bytes_per_sync: 0
+2023/05/18-00:54:31.090383 3d98                   Options.strict_bytes_per_sync: 0
+2023/05/18-00:54:31.090387 3d98       Options.compaction_readahead_size: 0
+2023/05/18-00:54:31.090390 3d98                  Options.max_background_flushes: -1
+2023/05/18-00:54:31.090394 3d98 Compression algorithms supported:
+2023/05/18-00:54:31.090421 3d98 	kZSTD supported: 1
+2023/05/18-00:54:31.090427 3d98 	kSnappyCompression supported: 1
+2023/05/18-00:54:31.090431 3d98 	kBZip2Compression supported: 1
+2023/05/18-00:54:31.090435 3d98 	kZlibCompression supported: 1
+2023/05/18-00:54:31.090438 3d98 	kLZ4Compression supported: 1
+2023/05/18-00:54:31.090442 3d98 	kXpressCompression supported: 0
+2023/05/18-00:54:31.090446 3d98 	kLZ4HCCompression supported: 1
+2023/05/18-00:54:31.090449 3d98 	kZSTDNotFinalCompression supported: 1
+2023/05/18-00:54:31.090461 3d98 Fast CRC32 supported: Not supported on x86
+2023/05/18-00:54:31.090465 3d98 DMutex implementation: std::mutex
+2023/05/18-00:54:31.092360 3d98 [set.cc:5528] Recovering from manifest file: db.db/MANIFEST-000105
+2023/05/18-00:54:31.092982 3d98 [ksdb/db/column_family.cc:632] --------------- Options for column family [default]:
+2023/05/18-00:54:31.092995 3d98               Options.comparator: leveldb.BytewiseComparator
+2023/05/18-00:54:31.092999 3d98           Options.merge_operator: None
+2023/05/18-00:54:31.093003 3d98        Options.compaction_filter: None
+2023/05/18-00:54:31.093006 3d98        Options.compaction_filter_factory: None
+2023/05/18-00:54:31.093010 3d98  Options.sst_partitioner_factory: None
+2023/05/18-00:54:31.093014 3d98         Options.memtable_factory: SkipListFactory
+2023/05/18-00:54:31.093017 3d98            Options.table_factory: BlockBasedTable
+2023/05/18-00:54:31.093072 3d98            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (00000248EBA78F90)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  checksum: 4
+  no_block_cache: 0
+  block_cache: 00000248EBA915D0
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.000
+    low_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 5
+  enable_index_compression: 1
+  block_align: 0
+  max_auto_readahead_size: 262144
+  prepopulate_block_cache: 0
+  initial_auto_readahead_size: 8192
+  num_file_reads_for_auto_readahead: 2
+2023/05/18-00:54:31.093079 3d98        Options.write_buffer_size: 67108864
+2023/05/18-00:54:31.093083 3d98  Options.max_write_buffer_number: 2
+2023/05/18-00:54:31.093087 3d98          Options.compression: Snappy
+2023/05/18-00:54:31.093091 3d98                  Options.bottommost_compression: Disabled
+2023/05/18-00:54:31.093094 3d98       Options.prefix_extractor: nullptr
+2023/05/18-00:54:31.093098 3d98   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2023/05/18-00:54:31.093102 3d98             Options.num_levels: 7
+2023/05/18-00:54:31.093105 3d98        Options.min_write_buffer_number_to_merge: 1
+2023/05/18-00:54:31.093109 3d98     Options.max_write_buffer_number_to_maintain: 0
+2023/05/18-00:54:31.093112 3d98     Options.max_write_buffer_size_to_maintain: 134217728
+2023/05/18-00:54:31.093116 3d98            Options.bottommost_compression_opts.window_bits: -14
+2023/05/18-00:54:31.093125 3d98                  Options.bottommost_compression_opts.level: 32767
+2023/05/18-00:54:31.093129 3d98               Options.bottommost_compression_opts.strategy: 0
+2023/05/18-00:54:31.093138 3d98         Options.bottommost_compression_opts.max_dict_bytes: 0
+2023/05/18-00:54:31.093142 3d98         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2023/05/18-00:54:31.093146 3d98         Options.bottommost_compression_opts.parallel_threads: 1
+2023/05/18-00:54:31.093149 3d98                  Options.bottommost_compression_opts.enabled: false
+2023/05/18-00:54:31.093156 3d98         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2023/05/18-00:54:31.093161 3d98         Options.bottommost_compression_opts.use_zstd_dict_trainer: true
+2023/05/18-00:54:31.093164 3d98            Options.compression_opts.window_bits: -14
+2023/05/18-00:54:31.093168 3d98                  Options.compression_opts.level: 32767
+2023/05/18-00:54:31.093172 3d98               Options.compression_opts.strategy: 0
+2023/05/18-00:54:31.093175 3d98         Options.compression_opts.max_dict_bytes: 0
+2023/05/18-00:54:31.093179 3d98         Options.compression_opts.zstd_max_train_bytes: 0
+2023/05/18-00:54:31.093182 3d98         Options.compression_opts.use_zstd_dict_trainer: true
+2023/05/18-00:54:31.093186 3d98         Options.compression_opts.parallel_threads: 1
+2023/05/18-00:54:31.093189 3d98                  Options.compression_opts.enabled: false
+2023/05/18-00:54:31.093193 3d98         Options.compression_opts.max_dict_buffer_bytes: 0
+2023/05/18-00:54:31.093196 3d98      Options.level0_file_num_compaction_trigger: 4
+2023/05/18-00:54:31.093200 3d98          Options.level0_slowdown_writes_trigger: 20
+2023/05/18-00:54:31.093203 3d98              Options.level0_stop_writes_trigger: 36
+2023/05/18-00:54:31.093207 3d98                   Options.target_file_size_base: 67108864
+2023/05/18-00:54:31.093211 3d98             Options.target_file_size_multiplier: 1
+2023/05/18-00:54:31.093214 3d98                Options.max_bytes_for_level_base: 268435456
+2023/05/18-00:54:31.093218 3d98 Options.level_compaction_dynamic_level_bytes: 0
+2023/05/18-00:54:31.093221 3d98          Options.max_bytes_for_level_multiplier: 10.000000
+2023/05/18-00:54:31.093226 3d98 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2023/05/18-00:54:31.093229 3d98 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2023/05/18-00:54:31.093233 3d98 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2023/05/18-00:54:31.093236 3d98 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2023/05/18-00:54:31.093240 3d98 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2023/05/18-00:54:31.093244 3d98 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2023/05/18-00:54:31.093247 3d98 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2023/05/18-00:54:31.093251 3d98       Options.max_sequential_skip_in_iterations: 8
+2023/05/18-00:54:31.093254 3d98                    Options.max_compaction_bytes: 1677721600
+2023/05/18-00:54:31.093258 3d98   Options.ignore_max_compaction_bytes_for_input: true
+2023/05/18-00:54:31.093261 3d98                        Options.arena_block_size: 1048576
+2023/05/18-00:54:31.093265 3d98   Options.soft_pending_compaction_bytes_limit: 68719476736
+2023/05/18-00:54:31.093269 3d98   Options.hard_pending_compaction_bytes_limit: 274877906944
+2023/05/18-00:54:31.093272 3d98                Options.disable_auto_compactions: 0
+2023/05/18-00:54:31.093278 3d98                        Options.compaction_style: kCompactionStyleLevel
+2023/05/18-00:54:31.093283 3d98                          Options.compaction_pri: kMinOverlappingRatio
+2023/05/18-00:54:31.093286 3d98 Options.compaction_options_universal.size_ratio: 1
+2023/05/18-00:54:31.093290 3d98 Options.compaction_options_universal.min_merge_width: 2
+2023/05/18-00:54:31.093293 3d98 Options.compaction_options_universal.max_merge_width: 4294967295
+2023/05/18-00:54:31.093297 3d98 Options.compaction_options_universal.max_size_amplification_percent: 200
+2023/05/18-00:54:31.093301 3d98 Options.compaction_options_universal.compression_size_percent: -1
+2023/05/18-00:54:31.093305 3d98 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2023/05/18-00:54:31.093309 3d98 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2023/05/18-00:54:31.093312 3d98 Options.compaction_options_fifo.allow_compaction: 0
+2023/05/18-00:54:31.093318 3d98                   Options.table_properties_collectors: 
+2023/05/18-00:54:31.093322 3d98                   Options.inplace_update_support: 0
+2023/05/18-00:54:31.093326 3d98                 Options.inplace_update_num_locks: 10000
+2023/05/18-00:54:31.093361 3d98               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2023/05/18-00:54:31.093368 3d98               Options.memtable_whole_key_filtering: 0
+2023/05/18-00:54:31.093371 3d98   Options.memtable_huge_page_size: 0
+2023/05/18-00:54:31.093375 3d98                           Options.bloom_locality: 0
+2023/05/18-00:54:31.093378 3d98                    Options.max_successive_merges: 0
+2023/05/18-00:54:31.093382 3d98                Options.optimize_filters_for_hits: 0
+2023/05/18-00:54:31.093385 3d98                Options.paranoid_file_checks: 0
+2023/05/18-00:54:31.093389 3d98                Options.force_consistency_checks: 1
+2023/05/18-00:54:31.093392 3d98                Options.report_bg_io_stats: 0
+2023/05/18-00:54:31.093396 3d98                               Options.ttl: 2592000
+2023/05/18-00:54:31.093399 3d98          Options.periodic_compaction_seconds: 0
+2023/05/18-00:54:31.093403 3d98  Options.preclude_last_level_data_seconds: 0
+2023/05/18-00:54:31.093407 3d98    Options.preserve_internal_time_seconds: 0
+2023/05/18-00:54:31.093410 3d98                       Options.enable_blob_files: false
+2023/05/18-00:54:31.093414 3d98                           Options.min_blob_size: 0
+2023/05/18-00:54:31.093417 3d98                          Options.blob_file_size: 268435456
+2023/05/18-00:54:31.093421 3d98                   Options.blob_compression_type: NoCompression
+2023/05/18-00:54:31.093425 3d98          Options.enable_blob_garbage_collection: false
+2023/05/18-00:54:31.093428 3d98      Options.blob_garbage_collection_age_cutoff: 0.250000
+2023/05/18-00:54:31.093433 3d98 Options.blob_garbage_collection_force_threshold: 1.000000
+2023/05/18-00:54:31.093437 3d98          Options.blob_compaction_readahead_size: 0
+2023/05/18-00:54:31.093440 3d98                Options.blob_file_starting_level: 0
+2023/05/18-00:54:31.093444 3d98 Options.experimental_mempurge_threshold: 0.000000
+2023/05/18-00:54:31.095098 3d98 [ucceeded,manifest_file_number is %llu, next_file_number is %llu, last_sequence is %llu, log_number is %llu,prev_log_number is %llu,max_column_family is %u,min_log_number_to_keep is %llu
+:5575] Recovered from manifest file:db.db/MANIFEST-000105 succeeded,manifest_file_number is 105, next_file_number is 107, last_sequence is 0, log_number is 101,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+2023/05/18-00:54:31.095119 3d98 [not locate MANIFEST file in :5584] Column family [default] (ID 0), log number is 101
+2023/05/18-00:54:31.095620 3d98 [ing a new Db, wal_dir contains existing log file: :539] DB ID: 2aab1919-f466-11ed-a7b9-7085c2c9e8fd
+2023/05/18-00:54:31.100244 3d98 EVENT_LOG_v1 {"time_micros": 1684382071100213, "job": 1, "event": "recovery_started", "wal_files": [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100, 104]}
+2023/05/18-00:54:31.100270 3d98 [ to keep #%llu:1032] Skipping log #4 since it is older than min log to keep #101
+2023/05/18-00:54:31.100275 3d98 [ to keep #%llu:1032] Skipping log #8 since it is older than min log to keep #101
+2023/05/18-00:54:31.100279 3d98 [ to keep #%llu:1032] Skipping log #12 since it is older than min log to keep #101
+2023/05/18-00:54:31.100283 3d98 [ to keep #%llu:1032] Skipping log #16 since it is older than min log to keep #101
+2023/05/18-00:54:31.100287 3d98 [ to keep #%llu:1032] Skipping log #20 since it is older than min log to keep #101
+2023/05/18-00:54:31.100291 3d98 [ to keep #%llu:1032] Skipping log #24 since it is older than min log to keep #101
+2023/05/18-00:54:31.100294 3d98 [ to keep #%llu:1032] Skipping log #28 since it is older than min log to keep #101
+2023/05/18-00:54:31.100298 3d98 [ to keep #%llu:1032] Skipping log #32 since it is older than min log to keep #101
+2023/05/18-00:54:31.100302 3d98 [ to keep #%llu:1032] Skipping log #36 since it is older than min log to keep #101
+2023/05/18-00:54:31.100305 3d98 [ to keep #%llu:1032] Skipping log #40 since it is older than min log to keep #101
+2023/05/18-00:54:31.100309 3d98 [ to keep #%llu:1032] Skipping log #44 since it is older than min log to keep #101
+2023/05/18-00:54:31.100316 3d98 [ to keep #%llu:1032] Skipping log #48 since it is older than min log to keep #101
+2023/05/18-00:54:31.100321 3d98 [ to keep #%llu:1032] Skipping log #52 since it is older than min log to keep #101
+2023/05/18-00:54:31.100325 3d98 [ to keep #%llu:1032] Skipping log #56 since it is older than min log to keep #101
+2023/05/18-00:54:31.100329 3d98 [ to keep #%llu:1032] Skipping log #60 since it is older than min log to keep #101
+2023/05/18-00:54:31.100332 3d98 [ to keep #%llu:1032] Skipping log #64 since it is older than min log to keep #101
+2023/05/18-00:54:31.100336 3d98 [ to keep #%llu:1032] Skipping log #68 since it is older than min log to keep #101
+2023/05/18-00:54:31.100340 3d98 [ to keep #%llu:1032] Skipping log #72 since it is older than min log to keep #101
+2023/05/18-00:54:31.100343 3d98 [ to keep #%llu:1032] Skipping log #76 since it is older than min log to keep #101
+2023/05/18-00:54:31.100347 3d98 [ to keep #%llu:1032] Skipping log #80 since it is older than min log to keep #101
+2023/05/18-00:54:31.100351 3d98 [ to keep #%llu:1032] Skipping log #84 since it is older than min log to keep #101
+2023/05/18-00:54:31.100354 3d98 [ to keep #%llu:1032] Skipping log #88 since it is older than min log to keep #101
+2023/05/18-00:54:31.100358 3d98 [ to keep #%llu:1032] Skipping log #92 since it is older than min log to keep #101
+2023/05/18-00:54:31.100362 3d98 [ to keep #%llu:1032] Skipping log #96 since it is older than min log to keep #101
+2023/05/18-00:54:31.100365 3d98 [ to keep #%llu:1032] Skipping log #100 since it is older than min log to keep #101
+2023/05/18-00:54:31.100371 3d98 [l:1045] Recovering log #104 mode 2
+2023/05/18-00:54:31.135209 3d98 EVENT_LOG_v1 {"time_micros": 1684382071135198, "job": 1, "event": "recovery_finished"}
+2023/05/18-00:54:31.135933 3d98 [ncode VersionEdit::5048] Creating manifest 109
+2023/05/18-00:54:31.277770 3d98 [rator its options.merge_operator is non-null:1988] SstFileManager instance 00000248EBA9C820
+2023/05/18-00:54:31.279661 3d98 DB pointer 00000248EBA93140
+2023/05/18-00:54:31.280018 2f28 [cc:1110] ------- DUMPING STATS -------
+2023/05/18-00:54:31.280032 2f28 [alloc STATS -------:1111] 
+** DB Stats **
+Uptime(secs): 0.2 total, 0.2 interval
+Cumulative writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sum      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 0.2 total, 0.2 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@00000248EBA915D0#5516 capacity: 8.00 MB usage: 0.08 KB table_size: 256 occupancy: 87 collections: 1 last_copies: 0 last_secs: 5.4e-05 secs_since: 0
+Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/05/18-00:54:31.473072 3d98 [ksdb/db/db_impl/db_impl.cc:497] Shutdown: canceling all background work
+2023/05/18-00:54:31.482702 3d98 [:770] Ignoring error %s:704] Shutdown complete

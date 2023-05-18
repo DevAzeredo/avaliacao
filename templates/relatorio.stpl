@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include!("head.stpl"); %>
+        <title>Avaliação de Atendimento</title>
+</head>
+
+<body>
+    <section class="section hero is-fullheight is-flex is-justify-content-center is-align-items-center">
+        <div class="container">
+            <h1 class="title has-text-centered">Relatório de Avaliação de Atendimento</h1>
+            <form>
+                <div class="field is-horizontal">
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <div class="columns is-centered">
+                                    <div class="column is-narrow">
+                                        <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Período:</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <div class="select">
+                                                            <select id="select-periodo">
+                                                                <option value="hoje">Hoje</option>
+                                                                <option value="semana_passada">Semana Passada</option>
+                                                                <option value="este_mes">Este Mês</option>
+                                                                <option value="personalizado">Personalizado</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-narrow">
+                                        <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                                <label class="label" id="lbl-inicio">Início:</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" type="date" id="input-inicio"
+                                                            name="input-inicio" data-="" value=<%=datainicio %>>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-narrow">
+                                        <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                                <label class="label" id="lbl-fim">Fim:</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" type="date" id="input-fim"
+                                                            value=<%=datafim%> name="input-fim">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" column is-narrow">
+                                        <div class="field ">
+                                            <button class="button is-primary" type="button"
+                                                onclick="filtrar()">Filtrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+            <div class="table-container mt-3">
+                <table class="table is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Nota 1</th>
+                            <th>Nota 2</th>
+                            <th>Nota 3</th>
+                            <th>Nota 4</th>
+                            <th>Nota 5</th>
+                            <th>Média</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2023-05-11</td>
+                            <td id="notas-1"></td>
+                            <td id="notas-2"></td>
+                            <td id="notas-3"></td>
+                            <td id="notas-4"></td>
+                            <td id="notas-5"></td>
+                            <td id="media-1"></td>
+                        </tr>
+                        <tr>
+                            <td>2023-05-10</td>
+                            <td id="notas-1"></td>
+                            <td id="notas-2"></td>
+                            <td id="notas-3"></td>
+                            <td id="notas-4"></td>
+                            <td id="notas-5"></td>
+                            <td id="media-2"></td>
+                        </tr>
+                        <tr>
+                            <td>2023-05-09</td>
+                            <td id="notas-1"></td>
+                            <td id="notas-2"></td>
+                            <td id="notas-3"></td>
+                            <td id="notas-4"></td>
+                            <td id="notas-5"></td>
+                            <td id="media-3"></td>
+                        </tr>
+                        <tr>
+                            <td>Média Geral</td>
+                            <td id="media-geral-nota-1"></td>
+                            <td id="media-geral-nota-2"></td>
+                            <td id="media-geral-nota-3"></td>
+                            <td id="media-geral-nota-4"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    const selectPeriodo = document.querySelector('#select-periodo');
+    const lblInicio = document.querySelector('#lbl-inicio');
+    const lblFim = document.querySelector('#lbl-fim');
+    const inputInicio = document.querySelector('#input-inicio');
+    const inputFim = document.querySelector('#input-fim');
+    const btnFiltrar = document.querySelector('#btn-filtrar');
+
+    inputInicio.addEventListener('change', function () {
+        if (inputFim.value && inputInicio.value > inputFim.value) {
+            alert('A data de início deve ser menor ou igual à data de fim.');
+            inputInicio.value = '';
+        }
+    });
+
+    inputFim.addEventListener('change', function () {
+        if (inputInicio.value && inputInicio.value > inputFim.value) {
+            alert('A data de fim deve ser maior ou igual à data de início.');
+            inputFim.value = '';
+        }
+    });
+
+
+    // adiciona um listener de mudança no selectPeriodo
+    selectPeriodo.addEventListener('change', function () {
+        //se a opção "personalizado" for selecionada, mostra os inputs de data
+        if (this.value === 'personalizado') {
+            inputInicio.style.display = 'inline-block';
+            inputFim.style.display = 'inline-block';
+            lblInicio.style.display = 'inline-block';
+            lblFim.style.display = 'inline-block';
+
+        } else {
+            inputInicio.style.display = 'none';
+            inputFim.style.display = 'none';
+            lblInicio.style.display = 'none';
+            lblFim.style.display = 'none';
+        }
+    });
+
+    selectPeriodo.addEventListener('change', function () {
+        const hoje = new Date();
+        let dataInicio, dataFim;
+        if (selectPeriodo.value === 'hoje') {
+            dataInicio = hoje;
+            dataFim = hoje;
+        } else if (selectPeriodo.value === 'semana_passada') {
+            dataInicio = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - 7);
+            dataFim = hoje;
+        } else if (selectPeriodo.value === 'este_mes') {
+            dataInicio = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - 30);
+            dataFim = hoje;
+        }
+        inputInicio.value = dataInicio ? dataInicio.toISOString().substring(0, 10) : '';
+        inputFim.value = dataFim ? dataFim.toISOString().substring(0, 10) : '';
+    });
+
+    function Filtrar() {
+        let datainicio = document.getElementById("datainicio").value;
+        let datafim = document.getElementById("datafim").value;
+        var url = "http://192.168.1.18:64555/relatorio";
+        url += "?datainicio=" + datainicio + "&datafim=" + datafim;
+        window.location.href = url;
+    }
+</script>
+
+</html>

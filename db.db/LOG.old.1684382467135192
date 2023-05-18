@@ -1,0 +1,312 @@
+2023/05/18-00:59:18.148373 4070 RocksDB version: 7.9.2
+2023/05/18-00:59:18.149715 4070 Compile date 2022-12-22 09:30:39
+2023/05/18-00:59:18.149744 4070 DB SUMMARY
+2023/05/18-00:59:18.149758 4070 DB Session ID:  HV4R457STASICX2L36B2
+2023/05/18-00:59:18.155035 4070 CURRENT file:  CURRENT
+2023/05/18-00:59:18.155160 4070 IDENTITY file:  IDENTITY
+2023/05/18-00:59:18.155335 4070 MANIFEST file:  MANIFEST-000109 size: 74 Bytes
+2023/05/18-00:59:18.155360 4070 SST files in db.db/ dir, Total Num: 0, files: 
+2023/05/18-00:59:18.155400 4070 Write Ahead Log file in db.db/: 000004.log size: 0 ; 000008.log size: 0 ; 000012.log size: 0 ; 000016.log size: 0 ; 000020.log size: 0 ; 000024.log size: 0 ; 000028.log size: 0 ; 000032.log size: 0 ; 000036.log size: 0 ; 000040.log size: 0 ; 000044.log size: 0 ; 000048.log size: 0 ; 000052.log size: 0 ; 000056.log size: 0 ; 000060.log size: 0 ; 000064.log size: 0 ; 000068.log size: 0 ; 000072.log size: 0 ; 000076.log size: 0 ; 000080.log size: 0 ; 000084.log size: 0 ; 000088.log size: 0 ; 000092.log size: 0 ; 000096.log size: 0 ; 000100.log size: 0 ; 000104.log size: 0 ; 000108.log size: 0 ; 
+2023/05/18-00:59:18.155529 4070                         Options.error_if_exists: 0
+2023/05/18-00:59:18.155540 4070                       Options.create_if_missing: 1
+2023/05/18-00:59:18.155545 4070                         Options.paranoid_checks: 1
+2023/05/18-00:59:18.155549 4070             Options.flush_verify_memtable_count: 1
+2023/05/18-00:59:18.155553 4070                               Options.track_and_verify_wals_in_manifest: 0
+2023/05/18-00:59:18.155557 4070        Options.verify_sst_unique_id_in_manifest: 1
+2023/05/18-00:59:18.155561 4070                                     Options.env: 000001CE609614D0
+2023/05/18-00:59:18.155566 4070                                      Options.fs: WinFS
+2023/05/18-00:59:18.155571 4070                                Options.info_log: 000001CE60947C30
+2023/05/18-00:59:18.155575 4070                Options.max_file_opening_threads: 16
+2023/05/18-00:59:18.155579 4070                              Options.statistics: 0000000000000000
+2023/05/18-00:59:18.155583 4070                               Options.use_fsync: 0
+2023/05/18-00:59:18.155587 4070                       Options.max_log_file_size: 0
+2023/05/18-00:59:18.155591 4070                  Options.max_manifest_file_size: 1073741824
+2023/05/18-00:59:18.155595 4070                   Options.log_file_time_to_roll: 0
+2023/05/18-00:59:18.155599 4070                       Options.keep_log_file_num: 1000
+2023/05/18-00:59:18.155603 4070                    Options.recycle_log_file_num: 0
+2023/05/18-00:59:18.155607 4070                         Options.allow_fallocate: 1
+2023/05/18-00:59:18.155611 4070                        Options.allow_mmap_reads: 0
+2023/05/18-00:59:18.155615 4070                       Options.allow_mmap_writes: 0
+2023/05/18-00:59:18.155619 4070                        Options.use_direct_reads: 0
+2023/05/18-00:59:18.155623 4070                        Options.use_direct_io_for_flush_and_compaction: 0
+2023/05/18-00:59:18.155627 4070          Options.create_missing_column_families: 0
+2023/05/18-00:59:18.155631 4070                              Options.db_log_dir: 
+2023/05/18-00:59:18.155635 4070                                 Options.wal_dir: 
+2023/05/18-00:59:18.155638 4070                Options.table_cache_numshardbits: 6
+2023/05/18-00:59:18.155642 4070                         Options.WAL_ttl_seconds: 0
+2023/05/18-00:59:18.155646 4070                       Options.WAL_size_limit_MB: 0
+2023/05/18-00:59:18.155650 4070                        Options.max_write_batch_group_size_bytes: 1048576
+2023/05/18-00:59:18.155654 4070             Options.manifest_preallocation_size: 4194304
+2023/05/18-00:59:18.155658 4070                     Options.is_fd_close_on_exec: 1
+2023/05/18-00:59:18.155662 4070                   Options.advise_random_on_open: 1
+2023/05/18-00:59:18.155666 4070                    Options.db_write_buffer_size: 0
+2023/05/18-00:59:18.155670 4070                    Options.write_buffer_manager: 000001CE608FEDB0
+2023/05/18-00:59:18.155708 4070         Options.access_hint_on_compaction_start: 1
+2023/05/18-00:59:18.155716 4070           Options.random_access_max_buffer_size: 1048576
+2023/05/18-00:59:18.155720 4070                      Options.use_adaptive_mutex: 0
+2023/05/18-00:59:18.155724 4070                            Options.rate_limiter: 0000000000000000
+2023/05/18-00:59:18.155730 4070     Options.sst_file_manager.rate_bytes_per_sec: 0
+2023/05/18-00:59:18.155733 4070                       Options.wal_recovery_mode: 2
+2023/05/18-00:59:18.155737 4070                  Options.enable_thread_tracking: 0
+2023/05/18-00:59:18.155741 4070                  Options.enable_pipelined_write: 0
+2023/05/18-00:59:18.155745 4070                  Options.unordered_write: 0
+2023/05/18-00:59:18.155749 4070         Options.allow_concurrent_memtable_write: 1
+2023/05/18-00:59:18.155753 4070      Options.enable_write_thread_adaptive_yield: 1
+2023/05/18-00:59:18.155757 4070             Options.write_thread_max_yield_usec: 100
+2023/05/18-00:59:18.155761 4070            Options.write_thread_slow_yield_usec: 3
+2023/05/18-00:59:18.155765 4070                               Options.row_cache: None
+2023/05/18-00:59:18.155769 4070                              Options.wal_filter: None
+2023/05/18-00:59:18.155773 4070             Options.avoid_flush_during_recovery: 0
+2023/05/18-00:59:18.155776 4070             Options.allow_ingest_behind: 0
+2023/05/18-00:59:18.155780 4070             Options.two_write_queues: 0
+2023/05/18-00:59:18.155784 4070             Options.manual_wal_flush: 0
+2023/05/18-00:59:18.155787 4070             Options.wal_compression: 0
+2023/05/18-00:59:18.155791 4070             Options.atomic_flush: 0
+2023/05/18-00:59:18.155795 4070             Options.avoid_unnecessary_blocking_io: 0
+2023/05/18-00:59:18.155799 4070                 Options.persist_stats_to_disk: 0
+2023/05/18-00:59:18.155803 4070                 Options.write_dbid_to_manifest: 0
+2023/05/18-00:59:18.155806 4070                 Options.log_readahead_size: 0
+2023/05/18-00:59:18.155810 4070                 Options.file_checksum_gen_factory: Unknown
+2023/05/18-00:59:18.155814 4070                 Options.best_efforts_recovery: 0
+2023/05/18-00:59:18.155818 4070                Options.max_bgerror_resume_count: 2147483647
+2023/05/18-00:59:18.155822 4070            Options.bgerror_resume_retry_interval: 1000000
+2023/05/18-00:59:18.155829 4070             Options.allow_data_in_errors: 0
+2023/05/18-00:59:18.155834 4070             Options.db_host_id: __hostname__
+2023/05/18-00:59:18.155838 4070             Options.enforce_single_del_contracts: true
+2023/05/18-00:59:18.155842 4070             Options.max_background_jobs: 2
+2023/05/18-00:59:18.155846 4070             Options.max_background_compactions: -1
+2023/05/18-00:59:18.155850 4070             Options.max_subcompactions: 1
+2023/05/18-00:59:18.155854 4070             Options.avoid_flush_during_shutdown: 0
+2023/05/18-00:59:18.155857 4070           Options.writable_file_max_buffer_size: 1048576
+2023/05/18-00:59:18.155862 4070             Options.delayed_write_rate : 16777216
+2023/05/18-00:59:18.155865 4070             Options.max_total_wal_size: 0
+2023/05/18-00:59:18.155869 4070             Options.delete_obsolete_files_period_micros: 21600000000
+2023/05/18-00:59:18.155873 4070                   Options.stats_dump_period_sec: 600
+2023/05/18-00:59:18.155877 4070                 Options.stats_persist_period_sec: 600
+2023/05/18-00:59:18.155881 4070                 Options.stats_history_buffer_size: 1048576
+2023/05/18-00:59:18.155885 4070                          Options.max_open_files: -1
+2023/05/18-00:59:18.155889 4070                          Options.bytes_per_sync: 0
+2023/05/18-00:59:18.155893 4070                      Options.wal_bytes_per_sync: 0
+2023/05/18-00:59:18.155896 4070                   Options.strict_bytes_per_sync: 0
+2023/05/18-00:59:18.155900 4070       Options.compaction_readahead_size: 0
+2023/05/18-00:59:18.155904 4070                  Options.max_background_flushes: -1
+2023/05/18-00:59:18.155921 4070 Compression algorithms supported:
+2023/05/18-00:59:18.155954 4070 	kZSTD supported: 1
+2023/05/18-00:59:18.155962 4070 	kSnappyCompression supported: 1
+2023/05/18-00:59:18.155966 4070 	kBZip2Compression supported: 1
+2023/05/18-00:59:18.155970 4070 	kZlibCompression supported: 1
+2023/05/18-00:59:18.155974 4070 	kLZ4Compression supported: 1
+2023/05/18-00:59:18.155978 4070 	kXpressCompression supported: 0
+2023/05/18-00:59:18.155981 4070 	kLZ4HCCompression supported: 1
+2023/05/18-00:59:18.155985 4070 	kZSTDNotFinalCompression supported: 1
+2023/05/18-00:59:18.155995 4070 Fast CRC32 supported: Not supported on x86
+2023/05/18-00:59:18.155999 4070 DMutex implementation: std::mutex
+2023/05/18-00:59:18.157365 4070 [set.cc:5528] Recovering from manifest file: db.db/MANIFEST-000109
+2023/05/18-00:59:18.157934 4070 [ksdb/db/column_family.cc:632] --------------- Options for column family [default]:
+2023/05/18-00:59:18.157944 4070               Options.comparator: leveldb.BytewiseComparator
+2023/05/18-00:59:18.157949 4070           Options.merge_operator: None
+2023/05/18-00:59:18.157953 4070        Options.compaction_filter: None
+2023/05/18-00:59:18.157957 4070        Options.compaction_filter_factory: None
+2023/05/18-00:59:18.157960 4070  Options.sst_partitioner_factory: None
+2023/05/18-00:59:18.157964 4070         Options.memtable_factory: SkipListFactory
+2023/05/18-00:59:18.157968 4070            Options.table_factory: BlockBasedTable
+2023/05/18-00:59:18.158064 4070            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000001CE60949A60)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  checksum: 4
+  no_block_cache: 0
+  block_cache: 000001CE60961970
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.000
+    low_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 5
+  enable_index_compression: 1
+  block_align: 0
+  max_auto_readahead_size: 262144
+  prepopulate_block_cache: 0
+  initial_auto_readahead_size: 8192
+  num_file_reads_for_auto_readahead: 2
+2023/05/18-00:59:18.158074 4070        Options.write_buffer_size: 67108864
+2023/05/18-00:59:18.158079 4070  Options.max_write_buffer_number: 2
+2023/05/18-00:59:18.158083 4070          Options.compression: Snappy
+2023/05/18-00:59:18.158087 4070                  Options.bottommost_compression: Disabled
+2023/05/18-00:59:18.158091 4070       Options.prefix_extractor: nullptr
+2023/05/18-00:59:18.158095 4070   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2023/05/18-00:59:18.158099 4070             Options.num_levels: 7
+2023/05/18-00:59:18.158103 4070        Options.min_write_buffer_number_to_merge: 1
+2023/05/18-00:59:18.158106 4070     Options.max_write_buffer_number_to_maintain: 0
+2023/05/18-00:59:18.158110 4070     Options.max_write_buffer_size_to_maintain: 134217728
+2023/05/18-00:59:18.158114 4070            Options.bottommost_compression_opts.window_bits: -14
+2023/05/18-00:59:18.158118 4070                  Options.bottommost_compression_opts.level: 32767
+2023/05/18-00:59:18.158122 4070               Options.bottommost_compression_opts.strategy: 0
+2023/05/18-00:59:18.158125 4070         Options.bottommost_compression_opts.max_dict_bytes: 0
+2023/05/18-00:59:18.158129 4070         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2023/05/18-00:59:18.158133 4070         Options.bottommost_compression_opts.parallel_threads: 1
+2023/05/18-00:59:18.158137 4070                  Options.bottommost_compression_opts.enabled: false
+2023/05/18-00:59:18.158144 4070         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2023/05/18-00:59:18.158150 4070         Options.bottommost_compression_opts.use_zstd_dict_trainer: true
+2023/05/18-00:59:18.158154 4070            Options.compression_opts.window_bits: -14
+2023/05/18-00:59:18.158157 4070                  Options.compression_opts.level: 32767
+2023/05/18-00:59:18.158161 4070               Options.compression_opts.strategy: 0
+2023/05/18-00:59:18.158165 4070         Options.compression_opts.max_dict_bytes: 0
+2023/05/18-00:59:18.158169 4070         Options.compression_opts.zstd_max_train_bytes: 0
+2023/05/18-00:59:18.158173 4070         Options.compression_opts.use_zstd_dict_trainer: true
+2023/05/18-00:59:18.158176 4070         Options.compression_opts.parallel_threads: 1
+2023/05/18-00:59:18.158180 4070                  Options.compression_opts.enabled: false
+2023/05/18-00:59:18.158184 4070         Options.compression_opts.max_dict_buffer_bytes: 0
+2023/05/18-00:59:18.158188 4070      Options.level0_file_num_compaction_trigger: 4
+2023/05/18-00:59:18.158192 4070          Options.level0_slowdown_writes_trigger: 20
+2023/05/18-00:59:18.158195 4070              Options.level0_stop_writes_trigger: 36
+2023/05/18-00:59:18.158199 4070                   Options.target_file_size_base: 67108864
+2023/05/18-00:59:18.158203 4070             Options.target_file_size_multiplier: 1
+2023/05/18-00:59:18.158207 4070                Options.max_bytes_for_level_base: 268435456
+2023/05/18-00:59:18.158211 4070 Options.level_compaction_dynamic_level_bytes: 0
+2023/05/18-00:59:18.158214 4070          Options.max_bytes_for_level_multiplier: 10.000000
+2023/05/18-00:59:18.158219 4070 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2023/05/18-00:59:18.158224 4070 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2023/05/18-00:59:18.158227 4070 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2023/05/18-00:59:18.158231 4070 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2023/05/18-00:59:18.158235 4070 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2023/05/18-00:59:18.158239 4070 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2023/05/18-00:59:18.158243 4070 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2023/05/18-00:59:18.158247 4070       Options.max_sequential_skip_in_iterations: 8
+2023/05/18-00:59:18.158250 4070                    Options.max_compaction_bytes: 1677721600
+2023/05/18-00:59:18.158254 4070   Options.ignore_max_compaction_bytes_for_input: true
+2023/05/18-00:59:18.158258 4070                        Options.arena_block_size: 1048576
+2023/05/18-00:59:18.158262 4070   Options.soft_pending_compaction_bytes_limit: 68719476736
+2023/05/18-00:59:18.158266 4070   Options.hard_pending_compaction_bytes_limit: 274877906944
+2023/05/18-00:59:18.158270 4070                Options.disable_auto_compactions: 0
+2023/05/18-00:59:18.158278 4070                        Options.compaction_style: kCompactionStyleLevel
+2023/05/18-00:59:18.158283 4070                          Options.compaction_pri: kMinOverlappingRatio
+2023/05/18-00:59:18.158298 4070 Options.compaction_options_universal.size_ratio: 1
+2023/05/18-00:59:18.158307 4070 Options.compaction_options_universal.min_merge_width: 2
+2023/05/18-00:59:18.158311 4070 Options.compaction_options_universal.max_merge_width: 4294967295
+2023/05/18-00:59:18.158318 4070 Options.compaction_options_universal.max_size_amplification_percent: 200
+2023/05/18-00:59:18.158322 4070 Options.compaction_options_universal.compression_size_percent: -1
+2023/05/18-00:59:18.158328 4070 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2023/05/18-00:59:18.158332 4070 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2023/05/18-00:59:18.158336 4070 Options.compaction_options_fifo.allow_compaction: 0
+2023/05/18-00:59:18.158343 4070                   Options.table_properties_collectors: 
+2023/05/18-00:59:18.158347 4070                   Options.inplace_update_support: 0
+2023/05/18-00:59:18.158351 4070                 Options.inplace_update_num_locks: 10000
+2023/05/18-00:59:18.158394 4070               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2023/05/18-00:59:18.158402 4070               Options.memtable_whole_key_filtering: 0
+2023/05/18-00:59:18.158406 4070   Options.memtable_huge_page_size: 0
+2023/05/18-00:59:18.158410 4070                           Options.bloom_locality: 0
+2023/05/18-00:59:18.158414 4070                    Options.max_successive_merges: 0
+2023/05/18-00:59:18.158418 4070                Options.optimize_filters_for_hits: 0
+2023/05/18-00:59:18.158422 4070                Options.paranoid_file_checks: 0
+2023/05/18-00:59:18.158426 4070                Options.force_consistency_checks: 1
+2023/05/18-00:59:18.158430 4070                Options.report_bg_io_stats: 0
+2023/05/18-00:59:18.158433 4070                               Options.ttl: 2592000
+2023/05/18-00:59:18.158437 4070          Options.periodic_compaction_seconds: 0
+2023/05/18-00:59:18.158441 4070  Options.preclude_last_level_data_seconds: 0
+2023/05/18-00:59:18.158445 4070    Options.preserve_internal_time_seconds: 0
+2023/05/18-00:59:18.158449 4070                       Options.enable_blob_files: false
+2023/05/18-00:59:18.158453 4070                           Options.min_blob_size: 0
+2023/05/18-00:59:18.158457 4070                          Options.blob_file_size: 268435456
+2023/05/18-00:59:18.158461 4070                   Options.blob_compression_type: NoCompression
+2023/05/18-00:59:18.158466 4070          Options.enable_blob_garbage_collection: false
+2023/05/18-00:59:18.158469 4070      Options.blob_garbage_collection_age_cutoff: 0.250000
+2023/05/18-00:59:18.158474 4070 Options.blob_garbage_collection_force_threshold: 1.000000
+2023/05/18-00:59:18.158479 4070          Options.blob_compaction_readahead_size: 0
+2023/05/18-00:59:18.158483 4070                Options.blob_file_starting_level: 0
+2023/05/18-00:59:18.158487 4070 Options.experimental_mempurge_threshold: 0.000000
+2023/05/18-00:59:18.159988 4070 [ucceeded,manifest_file_number is %llu, next_file_number is %llu, last_sequence is %llu, log_number is %llu,prev_log_number is %llu,max_column_family is %u,min_log_number_to_keep is %llu
+:5575] Recovered from manifest file:db.db/MANIFEST-000109 succeeded,manifest_file_number is 109, next_file_number is 111, last_sequence is 0, log_number is 105,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+2023/05/18-00:59:18.160010 4070 [not locate MANIFEST file in :5584] Column family [default] (ID 0), log number is 105
+2023/05/18-00:59:18.160478 4070 [ing a new Db, wal_dir contains existing log file: :539] DB ID: 2aab1919-f466-11ed-a7b9-7085c2c9e8fd
+2023/05/18-00:59:18.165543 4070 EVENT_LOG_v1 {"time_micros": 1684382358165505, "job": 1, "event": "recovery_started", "wal_files": [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100, 104, 108]}
+2023/05/18-00:59:18.165574 4070 [ to keep #%llu:1032] Skipping log #4 since it is older than min log to keep #105
+2023/05/18-00:59:18.165581 4070 [ to keep #%llu:1032] Skipping log #8 since it is older than min log to keep #105
+2023/05/18-00:59:18.165585 4070 [ to keep #%llu:1032] Skipping log #12 since it is older than min log to keep #105
+2023/05/18-00:59:18.165589 4070 [ to keep #%llu:1032] Skipping log #16 since it is older than min log to keep #105
+2023/05/18-00:59:18.165593 4070 [ to keep #%llu:1032] Skipping log #20 since it is older than min log to keep #105
+2023/05/18-00:59:18.165597 4070 [ to keep #%llu:1032] Skipping log #24 since it is older than min log to keep #105
+2023/05/18-00:59:18.165601 4070 [ to keep #%llu:1032] Skipping log #28 since it is older than min log to keep #105
+2023/05/18-00:59:18.165605 4070 [ to keep #%llu:1032] Skipping log #32 since it is older than min log to keep #105
+2023/05/18-00:59:18.165608 4070 [ to keep #%llu:1032] Skipping log #36 since it is older than min log to keep #105
+2023/05/18-00:59:18.165612 4070 [ to keep #%llu:1032] Skipping log #40 since it is older than min log to keep #105
+2023/05/18-00:59:18.165620 4070 [ to keep #%llu:1032] Skipping log #44 since it is older than min log to keep #105
+2023/05/18-00:59:18.165626 4070 [ to keep #%llu:1032] Skipping log #48 since it is older than min log to keep #105
+2023/05/18-00:59:18.165630 4070 [ to keep #%llu:1032] Skipping log #52 since it is older than min log to keep #105
+2023/05/18-00:59:18.165633 4070 [ to keep #%llu:1032] Skipping log #56 since it is older than min log to keep #105
+2023/05/18-00:59:18.165637 4070 [ to keep #%llu:1032] Skipping log #60 since it is older than min log to keep #105
+2023/05/18-00:59:18.165641 4070 [ to keep #%llu:1032] Skipping log #64 since it is older than min log to keep #105
+2023/05/18-00:59:18.165645 4070 [ to keep #%llu:1032] Skipping log #68 since it is older than min log to keep #105
+2023/05/18-00:59:18.165649 4070 [ to keep #%llu:1032] Skipping log #72 since it is older than min log to keep #105
+2023/05/18-00:59:18.165653 4070 [ to keep #%llu:1032] Skipping log #76 since it is older than min log to keep #105
+2023/05/18-00:59:18.165667 4070 [ to keep #%llu:1032] Skipping log #80 since it is older than min log to keep #105
+2023/05/18-00:59:18.165677 4070 [ to keep #%llu:1032] Skipping log #84 since it is older than min log to keep #105
+2023/05/18-00:59:18.165682 4070 [ to keep #%llu:1032] Skipping log #88 since it is older than min log to keep #105
+2023/05/18-00:59:18.165686 4070 [ to keep #%llu:1032] Skipping log #92 since it is older than min log to keep #105
+2023/05/18-00:59:18.165691 4070 [ to keep #%llu:1032] Skipping log #96 since it is older than min log to keep #105
+2023/05/18-00:59:18.165696 4070 [ to keep #%llu:1032] Skipping log #100 since it is older than min log to keep #105
+2023/05/18-00:59:18.165700 4070 [ to keep #%llu:1032] Skipping log #104 since it is older than min log to keep #105
+2023/05/18-00:59:18.165708 4070 [l:1045] Recovering log #108 mode 2
+2023/05/18-00:59:18.171321 4070 EVENT_LOG_v1 {"time_micros": 1684382358171311, "job": 1, "event": "recovery_finished"}
+2023/05/18-00:59:18.171977 4070 [ncode VersionEdit::5048] Creating manifest 113
+2023/05/18-00:59:18.230150 4070 [rator its options.merge_operator is non-null:1988] SstFileManager instance 000001CE6096E380
+2023/05/18-00:59:18.235152 4070 DB pointer 000001CE60963500
+2023/05/18-00:59:18.235966 3724 [cc:1110] ------- DUMPING STATS -------
+2023/05/18-00:59:18.236006 3724 [alloc STATS -------:1111] 
+** DB Stats **
+Uptime(secs): 0.1 total, 0.1 interval
+Cumulative writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sum      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 0.1 total, 0.1 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@000001CE60961970#14632 capacity: 8.00 MB usage: 0.08 KB table_size: 256 occupancy: 87 collections: 1 last_copies: 0 last_secs: 0.00012 secs_since: 0
+Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/05/18-01:00:56.523969 4070 [ksdb/db/db_impl/db_impl.cc:497] Shutdown: canceling all background work
+2023/05/18-01:00:56.534497 4070 [:770] Ignoring error %s:704] Shutdown complete
